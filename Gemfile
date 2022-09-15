@@ -19,6 +19,10 @@ group :development do
   gem "web-console"
 end
 
+group :test do
+  gem "shoulda-matchers"
+end
+
 group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "factory_bot_rails"
