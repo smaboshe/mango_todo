@@ -1,6 +1,6 @@
 # Mango Todo
 
-A simple todo app to test how the keyboard layout affects `send_keys` in Capybara.
+A simple todo app inspired by [Test-Driven Rails](https://thoughtbot.com/upcase/test-driven-rails) to test how the keyboard layout affects `send_keys` in Capybara.
 
 - [x] Add [Standard](https://github.com/testdouble/standard)
 - [x] Add [rspec-rails](https://github.com/rspec/rspec-rails)
