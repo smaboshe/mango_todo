@@ -1,14 +1,13 @@
 require "rails_helper"
 
-feature "User creates todo" do
+feature "User creates todo", js: true do
   scenario "successfully" do
     visit root_path
     click_on "Add a new todo"
 
-    # page.send_keys("Buy milk", :enter)
-    fill_in "Title", with: "Buy milk"
-    click_on "Create Todo"
+    task = "Buy milk"
+    page.send_keys(task, :enter)
 
-    expect(page).to have_css ".todos li", text: "Buy milk"
+    expect(page).to have_css ".todos li", text: task
   end
 end
