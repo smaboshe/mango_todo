@@ -9,7 +9,7 @@ class TodosController < ApplicationController
 
   def create
     Todo.create(todo_params)
-    redirect_to todos_path
+    redirect_to root_path
   end
 
   private
